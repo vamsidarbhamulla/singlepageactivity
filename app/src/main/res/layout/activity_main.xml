@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- 1. Top Bar -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp">
+
+            <ImageView
+                android:id="@+id/main_s_l_r1_image"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_launcher_background"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="20dp"/>
+
+            <TextView
+                android:id="@+id/main_s_l_r1_text"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Centered Text View in relative layout"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@id/main_s_l_r1_image"
+                android:layout_centerInParent="true"/>
+
+        </RelativeLayout>
+
+        <!-- 2. Image From Internet -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/main_s_l_r2_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Image downloaded from internet and displayed using picasso"
+                />
+
+            <ImageView
+                android:id="@+id/main_s_l_r2_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"/>
+        </RelativeLayout>
+
+        <!-- 3. Collapsible Text Views -->
+        <LinearLayout
+            android:id="@+id/main_l_l1_collapsible_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="5dp">
+
+            <ImageView
+                android:id="@+id/main_s_l_l1_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/arrow_down_float"
+                android:layout_gravity="right"
+                android:paddingRight="10dp" />
+
+            <TextView
+                android:id="@+id/main_s_l_l1_heading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Heading1"
+                android:textAllCaps="true"
+                android:textColorHighlight="@color/colorAccent"
+                android:textColor="@color/colorPrimaryDark"
+                android:paddingBottom="5dp"/>
+
+            <TextView
+                android:id="@+id/main_s_l_l1_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like)." />
+
+        </LinearLayout>
+
+        <!-- 4.Static Text Views  -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="5dp">
+
+            <TextView
+                android:id="@+id/main_s_l_l2_heading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Heading2"
+                android:textAllCaps="true"
+                android:textColorHighlight="@color/colorAccent"
+                android:textColor="@color/colorPrimaryDark"
+                android:paddingBottom="5dp"/>
+
+            <TextView
+                android:id="@+id/main_s_l_l2_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum." />
+
+        </LinearLayout>
+
+        <!-- 5.Static Text Views only to see scroll bar in action  -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="5dp">
+
+            <TextView
+                android:id="@+id/main_s_l_l3_heading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Heading3"
+                android:textAllCaps="true"
+                android:textColorHighlight="@color/colorAccent"
+                android:textColor="@color/colorPrimaryDark"
+                android:paddingBottom="5dp"/>
+
+            <TextView
+                android:id="@+id/main_s_l_l3_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of de Finibus Bonorum et Malorum (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, Lorem ipsum dolor sit amet.., comes from a line in section 1.10.32.
+
+The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from de Finibus Bonorum et Malorum by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham." />
+
+        </LinearLayout>
+
+        <!-- 6. Frame Layout with a single image -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorAccent"
+                android:text="Framelayout Image below"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp">
+
+                <ImageView
+                    android:id="@+id/main_s_l_f_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <!-- 7. Button Counter -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="5dp">
+
+            <Button
+                android:id="@+id/main_s_l_r3_hitme_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Hitme to get counter"
+                android:gravity="center_horizontal"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>
