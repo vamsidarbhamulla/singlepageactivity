@@ -1,4 +1,4 @@
-First Project in Android
+Single page activity android project
 
 Activity Design screens below:  + 
 
